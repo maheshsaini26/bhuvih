@@ -59,6 +59,7 @@ export default function PersonalInfoForm({
                 <div className="flex items-center gap-2">
                   <FormControl>
                     <Input
+                      {...value}
                       {...fieldValues}
                       type="file"
                       accept="image/*"
@@ -70,7 +71,7 @@ export default function PersonalInfoForm({
                     />
                   </FormControl>
                   <Button
-                    variant="outline"
+                    variant="secondary"
                     type="button"
                     onClick={() => {
                       fieldValues.onChange(null);
